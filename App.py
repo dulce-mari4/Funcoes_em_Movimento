@@ -42,3 +42,28 @@ st.markdown(
 
 """
 )
+
+import streamlit as st
+
+#rodapé (ajuda do gemini pois o streamlit não possui função específica para tal)
+footer_html = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 9999; 
+}
+</style>
+<div class="footer">
+    Desenvolvido por Dulce Maria e Patrick Oliveira | Estudantes de Ciência da Computação 
+    https://github.com/dulce-mari4 | https://github.com/PatrickOliveira1
+</div>
+"""
+st.markdown(footer_html, unsafe_allow_html=True)
