@@ -3,31 +3,42 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 st.set_page_config(
-    page_title="Hello",
-    page_icon="👋",
+    page_title="Pagina Inicial",
+    page_icon="🧮",
 )
 
-st.write("# Welcome to Streamlit! 👋")
+st.sidebar.success("Selecione uma lição acima.")
 
-st.sidebar.success("Select a demo above.")
+st.write("# 🧮 Bem-vindo ao Funções em Movimento!")
+
+st.write("#### Seu portal interativo para dominar a matemática do ensino médio")
+
+st.write("---")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+    **📘 O que você vai encontrar aqui:**
+    - Lições organizadas por temas: Álgebra, Geometria, Estatística, Funções e muito mais
+    - Explicações claras e exemplos práticos
+    - Exercícios interativos para testar seus conhecimentos
+    - Dicas para mandar bem nas provas e no ENEM
 """
 )
-# título
-st.title('Funções de 1º Grau')
-st.subheader('A forma geral desta função é: y = ax + b')
+
+st.write("---")
+
+st.markdown(
+    """
+    🎯 Objetivo do projeto Este aplicativo foi desenvolvido como parte de um trabalho acadêmico com o propósito de facilitar o aprendizado da matemática de forma acessível, dinâmica e envolvente.
+"""
+)
+
+st.write("---")
+
+st.markdown(
+    """
+    👨‍🏫 Como começar Clique no botão abaixo para acessar o conteúdo e escolher sua primeira lição!
+[ Começar agora ](/funcao1grau)
+
+"""
+)
