@@ -97,3 +97,9 @@ else:
         | Isso dá R\$ 7, então a alternativa correta é A).
         ✅ Gabarito: A) R\$ 7**
     """)
+
+st.page_link(
+    "pages/2_☑️ Quiz 1.py",
+    label="Ir para o quiz.",  
+    icon="☑️" 
+)

@@ -35,18 +35,19 @@ st.markdown(
 
 st.write("---")
 
-st.markdown(
-    """
-    👨‍🏫 Como começar Clique no botão abaixo para acessar o conteúdo e escolher sua primeira lição!
-[ Começar agora ](/funcao1grau)
-
-"""
+st.page_link(
+    "pages/1_🔘 Função do 1º grau.py",
+    label="Ir para Função do 1º grau.",  
+    icon="🔘" 
+)
+st.page_link(
+    "pages/3_🔘 Função do 2º grau.py",
+    label="Ir para Função do 2º grau.",  
+    icon="🔘" 
 )
 
-import streamlit as st
-
 #rodapé (ajuda do gemini pois o streamlit não possui função específica para tal)
-
+import streamlit as st
 st.divider()
 footer_html = """
 <style>
