@@ -46,23 +46,20 @@ st.markdown(
 import streamlit as st
 
 #rodapé (ajuda do gemini pois o streamlit não possui função específica para tal)
+
+st.divider()
 footer_html = """
 <style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    color: #000000;
-    text-align: center;
-    padding: 10px;
+/* Estiliza o conteúdo do rodapé (o texto) */
+.footer-content {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0 10px 0; /* Espaçamento interno (cima, direita, baixo, esquerda) */
+    color: #FAFAFA; /* Cor do texto (branco claro para contraste) */
     font-size: 14px;
-    z-index: 9999; 
 }
 </style>
-<div class="footer">
-    Desenvolvido por Dulce Maria e Patrick Oliveira | Estudantes de Ciência da Computação 
+<div class="footer-content">
+    Projeto de Site/App de Matemática | Desenvolvido por Dulce Maria e Patrick Oliveira | Estudantes de Ciência da Computação 
     https://github.com/dulce-mari4 | https://github.com/PatrickOliveira1
 </div>
 """
