@@ -9,15 +9,6 @@ st.set_page_config(
 
 # título
 st.title('Funções de 1º Grau')
-st.subheader('A forma geral desta função é: y = ax + b')
-
-# controles - entrada usuário
-a = st.slider('Selecione o valor de a (coeficiente angular)',
-              min_value=-5.0, max_value=5.0, value=1.0, step=0.1)
-b = st.slider('Selecione o valor de b (coeficiente linear)',
-              min_value=-5.0, max_value=5.0, value=0.0, step=0.1)
-
-st.markdown("---")
 st.markdown("### Entendendo a Função:")
 st.markdown(f"""
 As funções do 1º grau, também chamadas de **funções afins**, são expressões matemáticas que descrevem uma **reta** no plano cartesiano.
@@ -40,20 +31,18 @@ $y = ax + b$
 
 ---
 
-### 🧮 Exemplos
+### 🧮 Exemplos""")
 
-- Coeficiente Angular (a = {a}):** Controla a inclinação da reta. Se $a > 0$, a função é crescente. Se $a < 0$, a função é decrescente.
-- Coeficiente Linear (b = {b}):** É o ponto onde a reta cruza o eixo $y$. É o valor de $y$ quando $x = 0$.
+# controles - entrada usuário
+a = st.slider('Selecione o valor de a (coeficiente angular)',
+              min_value=-5.0, max_value=5.0, value=1.0, step=0.1)
+b = st.slider('Selecione o valor de b (coeficiente linear)',
+              min_value=-5.0, max_value=5.0, value=0.0, step=0.1)
 
----
+st.markdown(f"""
 
-### 🎯 Aplicações
-
-Funções do 1º grau aparecem em situações como:
-
-- Cálculo de preços com taxa fixa
-- Crescimento linear de uma população
-- Conversão de unidades com proporção constante
+- Coeficiente Angular (a = {a}): Controla a inclinação da reta. Se $a > 0 $, a função é crescente. Se $a < 0$, a função é decrescente.
+- Coeficiente Linear (b = {b}): É o ponto onde a reta cruza o eixo $y$. É o valor de $y$ quando $x = 0$.
 """)
 
 # lógica - 100 pontos pro eixo X de -10 a 10
@@ -74,6 +63,20 @@ ax.legend()
 st.pyplot(fig)
 
 st.write("---")
+
+st.markdown("""
+### 🎯 Aplicações
+
+Funções do 1º grau aparecem em situações como:
+
+- Cálculo de preços com taxa fixa;
+- Crescimento linear de uma população;
+- Conversão de unidades com proporção constante...
+
+Assista a vídeo aula a seguir para aprofundar seu conhecimento!
+""")
+videoaula1 = "https://youtu.be/x4k8950MVeg?si=M9zb1IMe5Eke7pI6"
+st.video(videoaula1)
 
 st.markdown("### **Agora vamos a uma lição simples para práticar o que você aprendeu:**")
 
