@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 st.set_page_config(
     page_title="Funções de 1º Grau",
@@ -11,14 +12,31 @@ st.set_page_config(
 st.title('Funções de 1º Grau')
 st.markdown("### Entendendo a Função:")
 st.markdown(f"""
-As funções do 1º grau, também chamadas de **funções afins**, são expressões matemáticas que descrevem uma **reta** no plano cartesiano.
+As funções do 1º grau, também chamadas de **funções afins**, são expressões 
+matemáticas que descrevem uma **reta** no plano cartesiano.
 
 A forma geral da função é:
 
 $y = ax + b$
+            
+Essa expressão tem só dois protagonistas. O termo “a” e o termo “b”. O primeiro 
+determina a inclinação da reta; o segundo, o ponto onde ela toca o eixo vertical. 
+Sempre que temos algo da forma “uma constante multiplicada por x, mais outra 
+constante”, estamos lidando com uma reta.
 
 - **a** é o coeficiente angular: indica a inclinação da reta.
 - **b** é o coeficiente linear: indica onde a reta cruza o eixo y.
+            
+Para construir essa reta no papel ou em um plano cartesiano, você só precisa de 
+dois pontos. O primeiro é sempre fácil: x = 0 dá f(0) = b. O segundo pode ser 
+x = 1: f(1) = a + b. Conecta os dois e pronto. A magia da linearidade é essa: 
+duas informações fixam todo o comportamento.
+
+No gráfico, alguns cenários famosos aparecem sempre. Quando **a** é positivo, a 
+reta sobe e parece otimista, sempre crescendo. Quando **a** é negativo, ela desce
+— um pequeno vale matemático. Quando **a** é zero, fica uma reta horizontal, 
+indiferente ao valor de x. E **b** desloca essa forma para cima ou para baixo 
+sem mudar sua inclinação.
 
 ---
 
@@ -34,9 +52,9 @@ $y = ax + b$
 ### 🧮 Exemplos""")
 
 # controles - entrada usuário
-a = st.slider('Selecione o valor de a (coeficiente angular)',
+a = st.slider('Selecione o valor de **a** (coeficiente angular)',
               min_value=-5.0, max_value=5.0, value=1.0, step=0.1)
-b = st.slider('Selecione o valor de b (coeficiente linear)',
+b = st.slider('Selecione o valor de **b** (coeficiente linear)',
               min_value=-5.0, max_value=5.0, value=0.0, step=0.1)
 
 st.markdown(f"""
@@ -77,6 +95,19 @@ Assista a vídeo aula a seguir para aprofundar seu conhecimento!
 """)
 videoaula1 = "https://youtu.be/x4k8950MVeg?si=M9zb1IMe5Eke7pI6"
 st.video(videoaula1)
+st.write("---")
+
+st.markdown("""
+### 📜 Mapa Mental
+
+Veja o mapa mental abaixo para fixar o conteúdo da aula!
+""")
+BASE_DIR = Path(__file__).resolve().parent.parent
+img_path = BASE_DIR / "imagens" / "mapamental.png"
+
+st.image(str(img_path))
+
+st.write("---")
 
 st.markdown("### **Agora vamos a uma lição simples para práticar o que você aprendeu:**")
 
@@ -106,3 +137,23 @@ st.page_link(
     label="Ir para o quiz.",  
     icon="☑️" 
 )
+
+#rodapé (ajuda do gemini pois o streamlit não possui função específica para tal)
+import streamlit as st
+st.divider()
+footer_html = """
+<style>
+/* Estiliza o conteúdo do rodapé (o texto) */
+.footer-content {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0 10px 0; /* Espaçamento interno (cima, direita, baixo, esquerda) */
+    color: #FAFAFA; /* Cor do texto (branco claro para contraste) */
+    font-size: 14px;
+}
+</style>
+<div class="footer-content">
+    Projeto de Site/App de Matemática | Desenvolvido por Dulce Maria e Patrick Oliveira | Estudantes de Ciência da Computação 
+    https://github.com/dulce-mari4 | https://github.com/PatrickOliveira1
+</div>
+"""
+st.markdown(footer_html, unsafe_allow_html=True)

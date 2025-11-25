@@ -29,7 +29,7 @@ st.write("---")
 
 st.markdown(
     """
-    🎯 Objetivo do projeto Este aplicativo foi desenvolvido como parte de um trabalho acadêmico com o propósito de facilitar o aprendizado da matemática de forma acessível, dinâmica e envolvente.
+    🎯 Objetivo do projeto: Este aplicativo foi desenvolvido como parte de um trabalho acadêmico com o propósito de facilitar o aprendizado da matemática de forma acessível, dinâmica e envolvente.
 """
 )
 
