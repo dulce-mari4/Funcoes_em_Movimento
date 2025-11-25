@@ -15,12 +15,15 @@ st.markdown(f"""
 As funções do 1º grau, também chamadas de **funções afins**, são expressões 
 matemáticas que descrevem uma **reta** no plano cartesiano.
 
-A forma geral da função é:
-
-$y = ax + b$
+A forma geral da função é:""")     
             
-Essa expressão tem só dois protagonistas. O termo “a” e o termo “b”. O primeiro 
-determina a inclinação da reta; o segundo, o ponto onde ela toca o eixo vertical. 
+col1, col2, col3 = st.columns([2, 1, 2]) 
+
+with col2:
+    st.write("$y = ax + b$")
+
+st.write("""Essa expressão tem só dois protagonistas. O termo “a” e o termo “b”. 
+O primeiro determina a inclinação da reta; o segundo, o ponto onde ela toca o eixo vertical. 
 Sempre que temos algo da forma “uma constante multiplicada por x, mais outra 
 constante”, estamos lidando com uma reta.
 
@@ -40,7 +43,7 @@ sem mudar sua inclinação.
 
 ---
 
-### 📊 Características
+### Características
 
 - O gráfico é sempre uma **reta**.
 - Se **a > 0**, a função é **crescente**.
@@ -49,7 +52,7 @@ sem mudar sua inclinação.
 
 ---
 
-### 🧮 Exemplos""")
+### Exemplos""")
 
 # controles - entrada usuário
 a = st.slider('Selecione o valor de **a** (coeficiente angular)',
@@ -83,7 +86,7 @@ st.pyplot(fig)
 st.write("---")
 
 st.markdown("""
-### 🎯 Aplicações
+### Aplicações
 
 Funções do 1º grau aparecem em situações como:
 
@@ -98,7 +101,7 @@ st.video(videoaula1)
 st.write("---")
 
 st.markdown("""
-### 📜 Mapa Mental
+### Mapa Mental
 
 Veja o mapa mental abaixo para fixar o conteúdo da aula!
 """)
@@ -120,16 +123,16 @@ escolha_funcao_1grau = st.radio(" ", opcoes_funcao_1grau)
 if escolha_funcao_1grau == "Selecione a opção correta:":
     st.error("Escolha uma das opções.")
 elif escolha_funcao_1grau != "A) R$ 7":
-    st.error("❌ Ops! Tente novamente.")
+    st.error("Ops! Tente novamente.")
 else:
-    st.success("✅ Correto!: f(4)=3*4-5=12-5=7")
+    st.success("Correto!: f(4)=3*4-5=12-5=7")
     st.markdown(
         """
         **Agora vamos para a explicação:
         Substituímos $x$ = 4 na função:
         $f(4)=3*4-5=12-5=7$
         | Isso dá R\$ 7, então a alternativa correta é A).
-        ✅ Gabarito: A) R\$ 7**
+        Gabarito: A) R\$ 7**
     """)
 
 st.page_link(
