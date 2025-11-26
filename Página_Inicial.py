@@ -17,7 +17,7 @@ st.write("---")
 
 st.markdown(
     """
-    **📘 O que você vai encontrar aqui:**
+    **O que você vai encontrar aqui:**
     - Lições organizadas por temas: Álgebra, Geometria, Estatística, Funções e muito mais!
     - Explicações claras e exemplos práticos,
     - Exercícios interativos para testar seus conhecimentos,
@@ -29,7 +29,7 @@ st.write("---")
 
 st.markdown(
     """
-    🎯 Objetivo do projeto Este aplicativo foi desenvolvido como parte de um trabalho acadêmico com o propósito de facilitar o aprendizado da matemática de forma acessível, dinâmica e envolvente.
+    Objetivo do projeto: Este aplicativo foi desenvolvido como parte de um trabalho acadêmico com o propósito de facilitar o aprendizado da matemática de forma acessível, dinâmica e envolvente.
 """
 )
 
