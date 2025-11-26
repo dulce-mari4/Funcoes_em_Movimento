@@ -11,7 +11,10 @@ st.set_page_config(
 st.title('Funções de 1º Grau')
 st.markdown("### Entendendo a Função:")
 st.markdown(f"""
-As funções do 1º grau, também chamadas de **funções afins**, são expressões matemáticas que descrevem uma **reta** no plano cartesiano.
+
+A função do 1º grau é uma **equação** que possui incógnita, onde as letras representam valores desconhecidos. 
+A sentença matemática da equação do 1º grau é ax + b = 0, em que a e b são números reais, e a é diferente de 0. O objetivo de escrever uma equação do 1º grau é encontrar qual é o valor da incógnita que satisfaz a equação. Esse valor é conhecido como solução ou raiz da equação.
+As funções do 1º grau também são chamadas de **funções afins**, elas descrevem uma **reta** no plano cartesiano.
 
 A forma geral da função é:
 
