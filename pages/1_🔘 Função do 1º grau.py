@@ -127,7 +127,7 @@ st.image(str(img_path))
 
 st.write("---")
 
-st.markdown("### **Agora vamos a uma lição simples para práticar o que você " \
+st.markdown("### **Agora vamos a uma lição simples para praticar o que você " \
 "aprendeu:**")
 
 st.markdown("""A função $f(x)=3x-5$ representa o custo, em reais, para produzir 
