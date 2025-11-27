@@ -11,12 +11,17 @@ st.set_page_config(
 # título
 st.title('Funções de 1º Grau')
 st.markdown("### Entendendo a Função:")
-st.markdown(f"""
+st.write("""
 
-A função do 1º grau é uma **equação** que possui incógnita, onde as letras representam valores desconhecidos. 
-A sentença matemática da equação do 1º grau é ax + b = 0, em que a e b são números reais, e a é diferente de 0. O objetivo de escrever uma equação do 1º grau é encontrar qual é o valor da incógnita que satisfaz a equação. Esse valor é conhecido como solução ou raiz da equação.
-As funções do 1º grau também são chamadas de **funções afins**, elas descrevem uma **reta** no plano cartesiano.
-=======
+A função do 1º grau é uma **equação** que possui incógnita, onde as letras 
+representam valores desconhecidos. A sentença matemática da equação do 1º grau 
+é ax + b = 0, em que **a** e **b** são números reais, e **a** é diferente de 0. 
+O objetivo de escrever uma equação do 1º grau é encontrar qual é o valor da 
+incógnita que satisfaz a equação. Esse valor é conhecido como solução ou raiz da 
+equação. 
+
+---
+
 As funções do 1º grau, também chamadas de **funções afins**, são expressões 
 matemáticas que descrevem uma **reta** no plano cartesiano.
 
@@ -28,7 +33,8 @@ with col2:
     st.write("$y = ax + b$")
 
 st.write("""Essa expressão tem só dois protagonistas. O termo “a” e o termo “b”. 
-O primeiro determina a inclinação da reta; o segundo, o ponto onde ela toca o eixo vertical. 
+O primeiro determina a inclinação da reta; o segundo, o ponto onde ela toca o 
+eixo vertical. 
 Sempre que temos algo da forma “uma constante multiplicada por x, mais outra 
 constante”, estamos lidando com uma reta.
 
@@ -41,10 +47,10 @@ x = 1: f(1) = a + b. Conecta os dois e pronto. A magia da linearidade é essa:
 duas informações fixam todo o comportamento.
 
 No gráfico, alguns cenários famosos aparecem sempre. Quando **a** é positivo, a 
-reta sobe e parece otimista, sempre crescendo. Quando **a** é negativo, ela desce
-— um pequeno vale matemático. Quando **a** é zero, fica uma reta horizontal, 
-indiferente ao valor de x. E **b** desloca essa forma para cima ou para baixo 
-sem mudar sua inclinação.
+reta sobe e parece otimista, sempre crescendo. Quando **a** é negativo, ela 
+desce — um pequeno vale matemático. Quando **a** é zero, fica uma reta 
+horizontal, indiferente ao valor de x. E **b** desloca essa forma para cima 
+ou para baixo sem mudar sua inclinação.
 
 ---
 
@@ -67,8 +73,11 @@ b = st.slider('Selecione o valor de **b** (coeficiente linear)',
 
 st.markdown(f"""
 
-- Coeficiente Angular (a = {a}): Controla a inclinação da reta. Se $a > 0 $, a função é crescente. Se $a < 0$, a função é decrescente.
-- Coeficiente Linear (b = {b}): É o ponto onde a reta cruza o eixo $y$. É o valor de $y$ quando $x = 0$.
+- Coeficiente Angular (a = {a}): Controla a inclinação da reta. Se $a > 0 $, a 
+função é crescente. Se $a < 0$, a função é decrescente.
+- Coeficiente Linear (b = {b}): É o ponto onde a reta cruza o eixo $y$. É o 
+valor de $y$ quando $x = 0$.
+
 """)
 
 # lógica - 100 pontos pro eixo X de -10 a 10
@@ -103,6 +112,7 @@ Assista a vídeo aula a seguir para aprofundar seu conhecimento!
 """)
 videoaula1 = "https://youtu.be/x4k8950MVeg?si=M9zb1IMe5Eke7pI6"
 st.video(videoaula1)
+
 st.write("---")
 
 st.markdown("""
@@ -117,11 +127,14 @@ st.image(str(img_path))
 
 st.write("---")
 
-st.markdown("### **Agora vamos a uma lição simples para práticar o que você aprendeu:**")
+st.markdown("### **Agora vamos a uma lição simples para práticar o que você " \
+"aprendeu:**")
 
-st.markdown("A função $f(x)=3x-5$ representa o custo, em reais, para produzir $x$ unidades de um produto. Qual é o custo para produzir 4 unidades?")
+st.markdown("""A função $f(x)=3x-5$ representa o custo, em reais, para produzir 
+$x$ unidades de um produto. Qual é o custo para produzir 4 unidades?""")
 
-opcoes_funcao_1grau = ["Selecione a opção correta:", "A) R$ 7", "B) R$ 12", "C) R$ 17", "D) R$ 20", "E) R$ 25"]
+opcoes_funcao_1grau = ["Selecione a opção correta:", "A) R$ 7", "B) R$ 12", 
+"C) R$ 17", "D) R$ 20", "E) R$ 25"]
 
 escolha_funcao_1grau = st.radio(" ", opcoes_funcao_1grau)
 
@@ -154,13 +167,15 @@ footer_html = """
 /* Estiliza o conteúdo do rodapé (o texto) */
 .footer-content {
     text-align: center; /* Centraliza o texto */
-    padding: 10px 0 10px 0; /* Espaçamento interno (cima, direita, baixo, esquerda) */
+    padding: 10px 0 10px 0; /* Espaçamento interno (cima, direita, baixo, 
+    esquerda) */
     color: #FAFAFA; /* Cor do texto (branco claro para contraste) */
     font-size: 14px;
 }
 </style>
 <div class="footer-content">
-    Projeto de Site/App de Matemática | Desenvolvido por Dulce Maria e Patrick Oliveira | Estudantes de Ciência da Computação 
+    Projeto de Site/App de Matemática | Desenvolvido por Dulce Maria e 
+    Patrick Oliveira | Estudantes de Ciência da Computação 
     https://github.com/dulce-mari4 | https://github.com/PatrickOliveira1
 </div>
 """
