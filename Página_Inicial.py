@@ -18,10 +18,10 @@ st.write("---")
 st.markdown(
     """
     **O que você vai encontrar aqui:**
-    - Lições organizadas por temas: Álgebra, Geometria, Estatística, Funções e muito mais!
-    - Explicações claras e exemplos práticos,
-    - Exercícios interativos para testar seus conhecimentos,
-    - Dicas para mandar bem nas provas e no ENEM.
+    - Lições organizadas por temas: Álgebra, Geometria, Estatística, Funções e 
+    muito mais! (A princípio teremos os temas de Função do 1º e 2º grau!)
+    - Explicações claras e exemplos práticos.
+    - Exercícios interativos para testar seus conhecimentos.
 """
 )
 
@@ -29,7 +29,9 @@ st.write("---")
 
 st.markdown(
     """
-    Objetivo do projeto: Este aplicativo foi desenvolvido como parte de um trabalho acadêmico com o propósito de facilitar o aprendizado da matemática de forma acessível, dinâmica e envolvente.
+    Objetivo do projeto: Este aplicativo foi desenvolvido como parte de um 
+    trabalho acadêmico com o propósito de facilitar o aprendizado da matemática 
+    de forma acessível, dinâmica e envolvente.
 """
 )
 
@@ -54,13 +56,15 @@ footer_html = """
 /* Estiliza o conteúdo do rodapé (o texto) */
 .footer-content {
     text-align: center; /* Centraliza o texto */
-    padding: 10px 0 10px 0; /* Espaçamento interno (cima, direita, baixo, esquerda) */
+    padding: 10px 0 10px 0; /* Espaçamento interno (cima, direita, baixo, 
+    esquerda) */
     color: #FAFAFA; /* Cor do texto (branco claro para contraste) */
     font-size: 14px;
 }
 </style>
 <div class="footer-content">
-    Projeto de Site/App de Matemática | Desenvolvido por Dulce Maria e Patrick Oliveira | Estudantes de Ciência da Computação 
+    Projeto de Site/App de Matemática | Desenvolvido por Dulce Maria e Patrick 
+    Oliveira | Estudantes de Ciência da Computação 
     https://github.com/dulce-mari4 | https://github.com/PatrickOliveira1
 </div>
 """

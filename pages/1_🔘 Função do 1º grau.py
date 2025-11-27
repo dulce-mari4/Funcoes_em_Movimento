@@ -77,7 +77,6 @@ st.markdown(f"""
 função é crescente. Se $a < 0$, a função é decrescente.
 - Coeficiente Linear (b = {b}): É o ponto onde a reta cruza o eixo $y$. É o 
 valor de $y$ quando $x = 0$.
-
 """)
 
 # lógica - 100 pontos pro eixo X de -10 a 10
@@ -97,6 +96,21 @@ ax.grid(True)
 ax.legend()
 st.pyplot(fig)
 
+st.markdown("Para calcular o **coeficiente angular**, usamos a seguinte regra:")
+st.latex(r"""
+\left\{
+\begin{aligned}
+m=\frac{y_2 - y_1}{x_2 - x_1} \\
+\end{aligned}
+\right.
+""")
+st.markdown("""Já o **coeficiente linear** corresponde ao valor de b. Se a função já 
+está na forma $f(x) = ax + b$ o coeficiente linear, é o valor de **b**. Caso a 
+função não esteja escrita de forma explícita, basta substituir o valor de $x$ 
+por 0 na equação e resolver para encontrar o valor de $y$.\\
+Exemplo:\\
+Para a função $f(x) = 3x + 2$ -> $f(0) = 3(0) + 2 = 0 + 2 = 2$\\
+Logo, o coeficiente linear é 2.""")
 st.write("---")
 
 st.markdown("""

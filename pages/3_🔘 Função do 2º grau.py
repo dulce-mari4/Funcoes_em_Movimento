@@ -20,9 +20,9 @@ de um jeito tranquilo.
 
 ---
 
-A equação do 2º grau é um polinômio do tipo ax² + bx + c, onde **a**, **b** e **c**
-são números reais. Aqui, nosso interesse é descobrir os valores de **x**, que 
-fará a expressão se igualar a 0, ou seja, suas raízes.
+A equação do 2º grau é um polinômio do tipo ax² + bx + c, onde **a**, **b** e 
+**c** são números reais. Aqui, nosso interesse é descobrir os valores de **x**, 
+que fará a expressão se igualar a 0, ou seja, suas raízes.
 
 A forma geral da função é:""")     
             
@@ -33,10 +33,10 @@ with col2:
 
 st.write("""
 Aqui, a brincadeira tem três personagens de verdade: **a**, **b** e **c**. O 
-**a** é o maestro — decide o formato da curva. O **b** mexe na inclinação inicial 
-e desloca o vértice para um lado ou para o outro. O **c** é o ponto onde tudo toca 
-o eixo y (basta colocar $x = 0$ e ver que dá $f(0) = c$. Só que a parte bonita da 
-função do segundo grau é o gráfico: uma parábola.
+**a** é o maestro — decide o formato da curva. O **b** mexe na inclinação 
+inicial e desloca o vértice para um lado ou para o outro. O **c** é o ponto onde 
+tudo toca o eixo y (basta colocar $x = 0$ e ver que dá $f(0) = c$. Só que a 
+parte bonita da função do segundo grau é o gráfico: uma parábola.
 
 Se **a > 0**, essa parábola se abre para cima, como uma taça ou um sorriso 
 geométrico. Se **a < 0**, ela se abre para baixo, como um arco ou um chapéu de 
@@ -45,28 +45,28 @@ o valor absoluto de a, mais estreita e “empinada” a curva; quanto menor, mai
 aberta e suave.
 
 O ponto mais especial do gráfico é o vértice. Ele é o ponto mais alto da 
-parábola quando **a < 0**, ou o mais baixo quando **a > 0**. A posição desse vértice não
-é chutada; existe uma fórmula elegante para encontrá-lo. A coordenada x do 
-vértice é:
+parábola quando **a < 0**, ou o mais baixo quando **a > 0**. A posição desse 
+vértice não é chutada; existe uma fórmula elegante para encontrá-lo. A 
+coordenada x do vértice é:
 
 $x_v = -b / (2a)$
 
-E a coordenada **y** do vértice é simplesmente $f(x_v)$. Isso te diz exatamente onde 
-a parábola alcança seu máximo ou mínimo.
+E a coordenada **y** do vértice é simplesmente $f(x_v)$. Isso te diz exatamente 
+onde a parábola alcança seu máximo ou mínimo.
 
 Agora, como essa curva encontra o eixo **x**? É aqui que a famosa fórmula de 
-Bhaskara entra em cena. Quando queremos descobrir os valores de **x** que fazem a 
-expressão $ax² + bx + c$ igualar zero, estamos procurando os pontos onde o gráfico
-toca (ou cruza) o eixo **x**. Resolver $ax² + bx + c = 0$ não é trivial na mão, então 
-Bhaskara nos presenteou com a solução já arrumada:
+Bhaskara entra em cena. Quando queremos descobrir os valores de **x** que fazem 
+a expressão $ax² + bx + c$ igualar zero, estamos procurando os pontos onde o 
+gráfico toca (ou cruza) o eixo **x**. Resolver $ax² + bx + c = 0$ não é trivial 
+na mão, então Bhaskara nos presenteou com a solução já arrumada:
 
 $x = -b ± √(b² - 4ac) / (2a)$
 
 O pedaço dentro da raiz, $b² - 4ac$, é o discriminante. Ele é o juiz de quantas 
 soluções a equação tem. Se ele for positivo, você tem duas interseções com o 
-eixo **x**. Se for zero, a parábola encosta no eixo x em um único ponto — o vértice 
-está exatamente ali. E se for negativo, a parábola fica toda acima ou toda 
-abaixo do eixo **x**, sem cruzá-lo.
+eixo **x**. Se for zero, a parábola encosta no eixo x em um único ponto — o 
+vértice está exatamente ali. E se for negativo, a parábola fica toda acima ou 
+toda abaixo do eixo **x**, sem cruzá-lo.
          
 Vejamos um exemplo:
 Equação ⇒ $x² - x - 12 = 0$\\
@@ -93,13 +93,13 @@ abaixo.
 A resposta correta é:
          
 O valor de **y** existe normalmente para qualquer **x**.
-O que Δ ≤ 0 determina é se existe (Δ=0) ou não existe (Δ<0) algum **x** que torne 
-y = 0.
+O que Δ ≤ 0 determina é se existe (Δ=0) ou não existe (Δ<0) algum **x** que 
+torne y = 0.
          
 - Δ > 0 ⇒ duas entradas na festa (duas raízes).
 - Δ = 0 ⇒ só uma entrada, exclusiva.
-- Δ < 0 ⇒ ninguém entra; a porta (eixo x) nunca é alcançada. (Não admite solução 
-dentro dos reais.)
+- Δ < 0 ⇒ ninguém entra; a porta (eixo x) nunca é alcançada. (Não admite 
+solução dentro dos reais.)
 
 ---
 
@@ -129,7 +129,8 @@ Determine a solução do polinômio: $5x² + 3x = 0$
 Agora quem some é o termo “bx”. O gráfico ainda é uma parábola, mas ela fica 
 perfeitamente alinhada no meio, simétrica em relação ao eixo **y**. É como se 
 alguém tivesse colocado a curva no centro com régua e esquadro. A ausência do 
-termo linear impede a parábola de se deslocar para a esquerda ou para a direita.\\
+termo linear impede a parábola de se deslocar para a esquerda ou para a 
+direita.\\
 Exemplo:\\
 Encontre as raízes da equação $3x² - 27 = 0$
          
@@ -192,7 +193,8 @@ Ambos chegam ao mesmo resultado - escolha o que te parecer mais confortável.
 ### Características
 
 - O gráfico é sempre uma **parábola**. O sentido depende do sinal de **a**.
-- **a é ≠ de 0**, sempre. Caso contrário, voltamos para o mundo das linhas retas.
+- **a é ≠ de 0**, sempre. Caso contrário, voltamos para o mundo das linhas 
+retas.
 - Existe sempre um vértice, que é o ponto extremo da curva. É o ponto de máximo 
 ou mínimo do gráfico e aparece em $x = -b/(2a)$
 
@@ -238,7 +240,8 @@ ax.plot(x, y, label="f(x) = ax² + bx + c")
 
 # Marcar e legendar o vértice
 if x_v is not None and x_min <= x_v <= x_max:
-    ax.scatter(x_v, y_v, color="red", s=50, label=f"Vértice ({x_v:.2f}, {y_v:.2f})")
+    ax.scatter(x_v, y_v, color="red", s=50, label=f"""Vértice 
+    ({x_v:.2f}, {y_v:.2f})""")
     ax.text(
         x_v, y_v,
         f"  ({x_v:.2f}, {y_v:.2f})",
@@ -289,8 +292,8 @@ st.image(str(img_path))
 
 st.write("---")
 
-st.markdown("### **Agora vamos a uma lição simples para praticar o que você " \
-"aprendeu:**")
+st.markdown("### Agora vamos a uma lição simples para praticar o que você " \
+"aprendeu:")
 
 st.markdown("""Resolva a seguinte equação: $x² - 5x + 6 = 0$""")
 
