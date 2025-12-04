@@ -273,22 +273,9 @@ Funções do 2º grau aparecem em situações como:
 - Quando um objeto cai de uma altura sob certas condições, a variação da altura
 com o tempo pode assumir forma quadrática dependendo do modelo físico.
 
-Assista a vídeo aula a seguir para aprofundar seu conhecimento!
+#### Assista a vídeo aula a seguir para aprofundar seu conhecimento!
 """)
-videoaula2 = "https://youtu.be/1QlFNgCuccU?si=2NgwRSQRfxkLxNcE"
-st.video(videoaula2)
-
-st.write("---")
-
-st.markdown("""
-### Mapa Mental
-
-Veja o mapa mental abaixo para fixar o conteúdo da aula!
-""")
-BASE_DIR = Path(__file__).resolve().parent.parent
-img_path = BASE_DIR / "imagens" / "mapamental2.jpeg"
-
-st.image(str(img_path))
+st.markdown("Clique aqui para ser redirecionado: [Função do 2º Grau](https://youtu.be/1QlFNgCuccU?si=2NgwRSQRfxkLxNcE)")
 
 st.write("---")
 

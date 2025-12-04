@@ -122,22 +122,9 @@ Funções do 1º grau aparecem em situações como:
 - Crescimento linear de uma população;
 - Conversão de unidades com proporção constante...
 
-Assista a vídeo aula a seguir para aprofundar seu conhecimento!
+#### Assista a vídeo aula a seguir para aprofundar seu conhecimento!
 """)
-videoaula1 = "https://youtu.be/x4k8950MVeg?si=M9zb1IMe5Eke7pI6"
-st.video(videoaula1)
-
-st.write("---")
-
-st.markdown("""
-### Mapa Mental
-
-Veja o mapa mental abaixo para fixar o conteúdo da aula!
-""")
-BASE_DIR = Path(__file__).resolve().parent.parent
-img_path = BASE_DIR / "imagens" / "mapamental.png"
-
-st.image(str(img_path))
+st.markdown("Clique aqui para ser redirecionado: [Função do 1º Grau](https://youtu.be/x4k8950MVeg?si=M9zb1IMe5Eke7pI6)")
 
 st.write("---")
 
