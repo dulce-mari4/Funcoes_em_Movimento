@@ -4,7 +4,7 @@ Projeto multidisciplinar III - desenvolvimento de software.
 <img width="1659" height="962" alt="telainicial" src="https://github.com/user-attachments/assets/16683732-a9aa-4198-a600-6e5725263f5c" />
 
 ## Sobre o Projeto
-Nosso objetivo é facilitar a compreensão de funções, mostrando o passo a passo do cálculo e do gráfico de forma lúdica e visual, garantindo por consequência maior entendimento referente aos mesmos. Nosso produto deve ser completo, de simples compreensão e entregar o que promete: conhecimento.
+Nosso objetivo é facilitar a compreensão de funções, mostrando o passo a passo do cálculo e do gráfico de forma lúdica e visual, garantindo por consequência, maior entendimento referente aos mesmos. Nosso produto é de simples compreensão e entrega o que promete: conhecimento.
 A aplicação fornece um banco de 20 questões contextualizadas, permitindo que o usuário teste seus conhecimentos e, após a submissão, tenha acesso imediato ao gabarito e à **resolução completa** de cada exercício. É uma ferramenta ideal para estudantes que buscam consolidar seu aprendizado.
 
 ## Principais Funcionalidades
